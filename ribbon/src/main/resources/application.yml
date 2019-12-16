@@ -1,0 +1,16 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
+
+#server.port：当前 ribbon 服务端口。
+  #spring.application.name：当前服务注册在 Eureka Server 上的名称。
+  #eureka.client.service-url.defaultZone：注册中心的访问地址。
+  #eureka.instance.prefer-ip-address：是否将当前服务的 IP 注册到 Eureka Server。

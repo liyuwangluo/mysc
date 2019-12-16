@@ -1,0 +1,15 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+# feign.hystrix.enabled：是否开启熔断器。
