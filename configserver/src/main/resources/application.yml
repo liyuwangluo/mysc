@@ -9,8 +9,8 @@ spring:
         git:
           uri: https://github.com/liyuwangluo/mysc.git
           searchPaths: config
-          username: liyuwangluo
-          password: liyuwnagluo666
+          username: root
+          password: root
       label: master
 eureka:
   client:
