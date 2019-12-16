@@ -1,0 +1,18 @@
+server:
+  port: 8078
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liyuwangluo/mysc.git
+          searchPaths: config
+          username: liyuwangluo
+          password: liyuwnagluo666
+      label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
